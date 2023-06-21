@@ -67,9 +67,9 @@ setup(
     packages=find_namespace_packages(include=["dbt", "dbt.*"]),
     include_package_data=True,
     install_requires=[dbt_sqlserver_requirement],
-    cmdclass={
-        "verify": VerifyVersionCommand,
-    },
+    # cmdclass={
+    #     "verify": VerifyVersionCommand,
+    # },
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "License :: OSI Approved :: MIT License",
